@@ -6,8 +6,8 @@ int NumberToPower(int a, int b)
     if (b == 0)
         return 1;
 
-    return a * SumNumbers(a, b - 1);
+    return a * NumberToPower(a, b - 1);
 }
 
-System.Console.WriteLine(NumberToPowers(2, 3));
+System.Console.WriteLine(NumberToPower(2, 3));
 
